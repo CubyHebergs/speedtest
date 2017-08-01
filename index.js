@@ -26,7 +26,7 @@ measure(function(output) {
         if (Delay < 1000) {
             var speed = Math.round((data.length * 1000) / (cost - (Math.round(Delay + 7))));
         } else {
-            var speed = Math.round((data.length * 1000) / (cost - (Math.round(+7))));
+            var speed = Math.round((data.length * 1000) / (cost - (Math.round(+7.00))));
         }
         var pageDivs = $("#speedtest").html(roundToTwo(speed / 1024 / 1024) + " Mo/s " + "(" + roundToTwo(roundToTwo(speed / 1024 / 1024) * 8) + " Mb/s)");
     });
